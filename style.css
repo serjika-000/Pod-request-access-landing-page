@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100;400&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+    
+
+
+html,
+body {
+    height: 100%;
+}
+
+img,
+svg {
+    
+    max-width: 100%;
+}
+
+
+
+h1 {
+   
+    font-weight: 100;
+    
+}
+
+p {
+    font-size: 15px;
+    font-weight: 100;
+    
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Chivo', sans-serif;
+    background-color: hsla(224, 35%, 11%, 1);
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+    max-width: 1440px;
+    padding: 62px 24px 71px;
+}
+
+.image-host {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.logo-wrapper {
+    margin-bottom:57px;
+}
+
+.logo-wrapper img {
+    margin: 0 auto;
+}
+
+
+
+.content-header {
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 1);
+    margin-bottom:10px;
+}
+
+.text-colored {
+    color: hsla(157, 74%, 61%, 1);
+}
+
+.content-description {
+    color: hsla(224, 40%, 83%, 1);
+    margin-bottom: 33px;
+}
+
+
+
+
+.bottom-section {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 48px;
+}
+
+
+
+
+.content-sponser {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+.content-sponser img {
+    max-width:77px;
+    max-height: 17px;
+}
+
+
+
+.content-email {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-email input {
+    color: hsla(0, 0%, 100%, 1);
+    font-family: 'Chivo', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    border: none;
+    border-radius: 28px;
+    background-color: hsla(224, 26%, 23%, 1);
+    padding:6px 24px;
+}
+
+.content-email input:focus {
+    outline: none;
+}
+
+.access-btn {
+    color: hsla(224, 35%, 11%, 1);
+    font-size:14px;
+    font-weight: bold;
+   
+    border-radius: 28px;
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.50);
+    background-color: hsla(157, 74%, 61%, 1);
+    padding: 6px;
+}
+
+.access-btn:hover {
+    background-color: hsla(157, 100%, 85%, 1);
+}
+/* here is error in main.js */
+.error-message {
+    color: hsla(0, 96%, 61%, 1);
+    text-align: left;
+    font-size:12px;
+    font-weight: bold;
+    height: 14px;
+    padding: 0 24px;
+}
+
+.challenge-section {
+    position: absolute;
+    color: hsla(0, 0%, 100%, 1);
+    text-align: center;
+    
+}
+
+.challenge-section  a {
+    color: hsla(157, 74%, 61%, 1);
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    
+
+    h1 {
+        font-size: 48px;
+        
+    }
+
+    p {
+        font-size: 18px;
+       
+    }
+
+
+    .container {
+        position: unset;
+        text-align: left;
+        background-image: url(./assets/desktop/bg-pattern-dots.svg), url(./assets/tablet/image-host.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom 0 left 30px, top 0 right 0;
+        padding: 50px 39px 257px;
+    }
+
+    .image-host {
+        display: none;
+    }
+
+    .logo-wrapper {
+        margin-bottom: 152px;
+    }
+
+    .logo-wrapper img {
+        margin: 0;
+    }
+
+    
+
+    .content-section {
+        max-width: 635px;
+        background-color: hsla(224, 35%, 11%, 1);
+        padding-top: 93px;
+    }
+
+    .content-header {
+        margin-bottom:10px;
+    }
+
+    .content-description {
+        max-width: 445px;
+        margin-bottom:35px;
+    }
+
+  */
+
+    .bottom-section {
+        flex-direction: column;
+        gap: 42px;
+    }
+
+  
+
+    .content-email {
+        max-width: 427px;
+    }
+
+    .email-form {
+        position: relative;
+        justify-content: center;
+    }
+
+    .content-email input {
+        padding: 14px 32px;
+    }
+
+
+    .access-btn {
+        position: absolute;
+        right:5px;
+        box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.50);
+        padding: 9px 27px;
+    }
+
+  
+
+    .content-sponser {
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .content-sponser img {
+        max-width: 536px;
+        max-height: 29px
+    }
+
+    
+}
+
+
+
+@media (min-width: 1440px) {
+
+  
+
+    h1 {
+        font-size: 52px;
+        
+    }
+
+    
+
+    body {
+        align-items: center;
+    }
+
+    .container {
+        width: 1440px;
+        max-width: 100%;
+        background-image: url(./assets/desktop/bg-pattern-dots.svg), url(./assets/desktop/image-host.jpg);
+        background-position: bottom 53px right, top right;
+        margin-top:130px;
+        padding: 0 0 102px 165px;
+    }
+
+    .logo-wrapper {
+        margin-top: -27px;
+        margin-bottom: 103px;
+    }
+
+ 
+
+    .content-section {
+        max-width: 723px;
+        
+        padding-top: 88px;
+    }
+
+    .content-header {
+        margin-bottom: 7px;
+    }
+}
